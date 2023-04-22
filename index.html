@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_92524f791e3f44d29d0a1747ea640281 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_92524f791e3f44d29d0a1747ea640281" ></div>
+        
+</body>
+<script>    
+    
+            var map_92524f791e3f44d29d0a1747ea640281 = L.map(
+                "map_92524f791e3f44d29d0a1747ea640281",
+                {
+                    center: [24.786817, 120.997859],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_92524f791e3f44d29d0a1747ea640281);
+
+            
+
+        
+    
+            var tile_layer_0e1fb1cdb41346dfa410f8e495a85060 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_92524f791e3f44d29d0a1747ea640281);
+        
+    
+            var marker_ddb6513770da462ba821629d2ca6f95d = L.marker(
+                [24.788038, 121.0015],
+                {}
+            ).addTo(map_92524f791e3f44d29d0a1747ea640281);
+        
+    
+            var icon_22cbf0d01166438b9096db236f1776dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ddb6513770da462ba821629d2ca6f95d.setIcon(icon_22cbf0d01166438b9096db236f1776dd);
+        
+    
+        var popup_dc19398566e644898e20ee3be76af290 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ec852fde75354dc89503725df95a423c = $(`<div id="html_ec852fde75354dc89503725df95a423c" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>共享電動滑板車站點圖</title> <h4 style="margin-bottom:10px; text-align:center">交大-D棚站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">交大-D棚站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">LM__01</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">16</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.788038</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">121.0015</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_dc19398566e644898e20ee3be76af290.setContent(html_ec852fde75354dc89503725df95a423c);
+        
+
+        marker_ddb6513770da462ba821629d2ca6f95d.bindPopup(popup_dc19398566e644898e20ee3be76af290)
+        ;
+
+        
+    
+    
+            marker_ddb6513770da462ba821629d2ca6f95d.bindTooltip(
+                `<div>
+                     交大-D棚站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_92b0628336dc441a92abd3e97b3f43d1 = L.marker(
+                [24.789055, 120.998047],
+                {}
+            ).addTo(map_92524f791e3f44d29d0a1747ea640281);
+        
+    
+            var icon_62a6649c14cb455eb379da54f16d5b9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_92b0628336dc441a92abd3e97b3f43d1.setIcon(icon_62a6649c14cb455eb379da54f16d5b9c);
+        
+    
+        var popup_9529413a2a8f4505941cc0ef96e72d42 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_23dcee3d156241d2bd3c28ab67aa1949 = $(`<div id="html_23dcee3d156241d2bd3c28ab67aa1949" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>共享電動滑板車站點圖</title> <h4 style="margin-bottom:10px; text-align:center">交大-竹軒站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">交大-竹軒站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">LM__10</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">8</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.789055</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">120.998047</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_9529413a2a8f4505941cc0ef96e72d42.setContent(html_23dcee3d156241d2bd3c28ab67aa1949);
+        
+
+        marker_92b0628336dc441a92abd3e97b3f43d1.bindPopup(popup_9529413a2a8f4505941cc0ef96e72d42)
+        ;
+
+        
+    
+    
+            marker_92b0628336dc441a92abd3e97b3f43d1.bindTooltip(
+                `<div>
+                     交大-竹軒站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_34d334c62a56425c908ff66266b8f702 = L.marker(
+                [24.789087, 120.997221],
+                {}
+            ).addTo(map_92524f791e3f44d29d0a1747ea640281);
+        
+    
+            var icon_780aaa3d3c754ca1a38c147cb39a2473 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_34d334c62a56425c908ff66266b8f702.setIcon(icon_780aaa3d3c754ca1a38c147cb39a2473);
+        
+    
+        var popup_62fe3af5f4c14476b3a97fcc028109ec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c2470f9dff7848e68624a2d8b40c1474 = $(`<div id="html_c2470f9dff7848e68624a2d8b40c1474" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>共享電動滑板車站點圖</title> <h4 style="margin-bottom:10px; text-align:center">交大-二餐後門站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">交大-二餐後門站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">LM__11</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">8</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.789087</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">120.997221</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_62fe3af5f4c14476b3a97fcc028109ec.setContent(html_c2470f9dff7848e68624a2d8b40c1474);
+        
+
+        marker_34d334c62a56425c908ff66266b8f702.bindPopup(popup_62fe3af5f4c14476b3a97fcc028109ec)
+        ;
+
+        
+    
+    
+            marker_34d334c62a56425c908ff66266b8f702.bindTooltip(
+                `<div>
+                     交大-二餐後門站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_501ce6931c2e4a409bf44cbb9f625a7d = L.marker(
+                [24.787204, 120.998626],
+                {}
+            ).addTo(map_92524f791e3f44d29d0a1747ea640281);
+        
+    
+            var icon_39e287d0eba3412e86cc49ba003cdd35 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_501ce6931c2e4a409bf44cbb9f625a7d.setIcon(icon_39e287d0eba3412e86cc49ba003cdd35);
+        
+    
+        var popup_ba546f97eacf4201a8241689b64d47a2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b51d43c8484042c882087e215646f7d0 = $(`<div id="html_b51d43c8484042c882087e215646f7d0" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>共享電動滑板車站點圖</title> <h4 style="margin-bottom:10px; text-align:center">交大-人社一站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">交大-人社一站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">LM__12</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">12</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.787204</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">120.998626</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_ba546f97eacf4201a8241689b64d47a2.setContent(html_b51d43c8484042c882087e215646f7d0);
+        
+
+        marker_501ce6931c2e4a409bf44cbb9f625a7d.bindPopup(popup_ba546f97eacf4201a8241689b64d47a2)
+        ;
+
+        
+    
+    
+            marker_501ce6931c2e4a409bf44cbb9f625a7d.bindTooltip(
+                `<div>
+                     交大-人社一站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_300e43d02c1f459c94b5069ec959d810 = L.marker(
+                [24.786547, 121.000368],
+                {}
+            ).addTo(map_92524f791e3f44d29d0a1747ea640281);
+        
+    
+            var icon_b9ca657c274a452e9dcce1272983c2b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_300e43d02c1f459c94b5069ec959d810.setIcon(icon_b9ca657c274a452e9dcce1272983c2b0);
+        
+    
+        var popup_987064ca6a474960b241b2e0326e8cf3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_73531f7615d6451fba77e1c06c7707ad = $(`<div id="html_73531f7615d6451fba77e1c06c7707ad" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>共享電動滑板車站點圖</title> <h4 style="margin-bottom:10px; text-align:center">交大-活中站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">交大-活中站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">LM__02</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">8</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.786547</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">121.000368</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_987064ca6a474960b241b2e0326e8cf3.setContent(html_73531f7615d6451fba77e1c06c7707ad);
+        
+
+        marker_300e43d02c1f459c94b5069ec959d810.bindPopup(popup_987064ca6a474960b241b2e0326e8cf3)
+        ;
+
+        
+    
+    
+            marker_300e43d02c1f459c94b5069ec959d810.bindTooltip(
+                `<div>
+                     交大-活中站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8bea7d2e30f0468687399f44683e1dc3 = L.marker(
+                [24.784155, 120.995947],
+                {}
+            ).addTo(map_92524f791e3f44d29d0a1747ea640281);
+        
+    
+            var icon_ffacc60a2d3345f6a725d66f954585b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8bea7d2e30f0468687399f44683e1dc3.setIcon(icon_ffacc60a2d3345f6a725d66f954585b3);
+        
+    
+        var popup_024afb984177403985adec6aeb72b540 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d7493130ad9e40499fdf87a4d3f9b0fb = $(`<div id="html_d7493130ad9e40499fdf87a4d3f9b0fb" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>共享電動滑板車站點圖</title> <h4 style="margin-bottom:10px; text-align:center">交大-十三舍站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">交大-十三舍站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">LM__06</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">16</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.784155</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">120.995947</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_024afb984177403985adec6aeb72b540.setContent(html_d7493130ad9e40499fdf87a4d3f9b0fb);
+        
+
+        marker_8bea7d2e30f0468687399f44683e1dc3.bindPopup(popup_024afb984177403985adec6aeb72b540)
+        ;
+
+        
+    
+    
+            marker_8bea7d2e30f0468687399f44683e1dc3.bindTooltip(
+                `<div>
+                     交大-十三舍站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_70c364199b534fb792cf57730955458a = L.marker(
+                [24.7849028, 121.0001034],
+                {}
+            ).addTo(map_92524f791e3f44d29d0a1747ea640281);
+        
+    
+            var icon_fb85d8ed7c8b4e9b8e8e5d4f216fb3df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_70c364199b534fb792cf57730955458a.setIcon(icon_fb85d8ed7c8b4e9b8e8e5d4f216fb3df);
+        
+    
+        var popup_2f1eeaa201364965a37fea7d752b7d4d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_85e195dcff93459585837cbe544a2351 = $(`<div id="html_85e195dcff93459585837cbe544a2351" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>共享電動滑板車站點圖</title> <h4 style="margin-bottom:10px; text-align:center">交大-女二舍站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">交大-女二舍站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">LM__03</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">16</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.7849028</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">121.0001034</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_2f1eeaa201364965a37fea7d752b7d4d.setContent(html_85e195dcff93459585837cbe544a2351);
+        
+
+        marker_70c364199b534fb792cf57730955458a.bindPopup(popup_2f1eeaa201364965a37fea7d752b7d4d)
+        ;
+
+        
+    
+    
+            marker_70c364199b534fb792cf57730955458a.bindTooltip(
+                `<div>
+                     交大-女二舍站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eb50719acb204e70bdaa0d825fb5b31c = L.marker(
+                [24.7854768, 120.9979821],
+                {}
+            ).addTo(map_92524f791e3f44d29d0a1747ea640281);
+        
+    
+            var icon_29fcabbfdc0e45359bc31bfb365298ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_eb50719acb204e70bdaa0d825fb5b31c.setIcon(icon_29fcabbfdc0e45359bc31bfb365298ac);
+        
+    
+        var popup_0782c861bcab4de0b79ef768f6bf6b88 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8b6c2a24579943cfaf63515190824bb2 = $(`<div id="html_8b6c2a24579943cfaf63515190824bb2" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>共享電動滑板車站點圖</title> <h4 style="margin-bottom:10px; text-align:center">交大-管二小徑站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">交大-管二小徑站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">LM__04</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">8</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.7854768</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">120.9979821</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_0782c861bcab4de0b79ef768f6bf6b88.setContent(html_8b6c2a24579943cfaf63515190824bb2);
+        
+
+        marker_eb50719acb204e70bdaa0d825fb5b31c.bindPopup(popup_0782c861bcab4de0b79ef768f6bf6b88)
+        ;
+
+        
+    
+    
+            marker_eb50719acb204e70bdaa0d825fb5b31c.bindTooltip(
+                `<div>
+                     交大-管二小徑站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f42db4b9878b43a6bf5342e85f58bfb8 = L.marker(
+                [24.7840702, 120.997104],
+                {}
+            ).addTo(map_92524f791e3f44d29d0a1747ea640281);
+        
+    
+            var icon_576363072dc940918c3b152ef6840ac1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f42db4b9878b43a6bf5342e85f58bfb8.setIcon(icon_576363072dc940918c3b152ef6840ac1);
+        
+    
+        var popup_6ef9a786c3564da5b78092100981f96c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7b57ef570e414105934485e5910ea190 = $(`<div id="html_7b57ef570e414105934485e5910ea190" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>共享電動滑板車站點圖</title> <h4 style="margin-bottom:10px; text-align:center">交大-綜合一館站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">交大-綜合一館站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">LM__05</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">16</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.7840702</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">120.997104</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_6ef9a786c3564da5b78092100981f96c.setContent(html_7b57ef570e414105934485e5910ea190);
+        
+
+        marker_f42db4b9878b43a6bf5342e85f58bfb8.bindPopup(popup_6ef9a786c3564da5b78092100981f96c)
+        ;
+
+        
+    
+    
+            marker_f42db4b9878b43a6bf5342e85f58bfb8.bindTooltip(
+                `<div>
+                     交大-綜合一館站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_99aeef04660742c1b42ad02541ef7139 = L.marker(
+                [24.787697, 120.9957894],
+                {}
+            ).addTo(map_92524f791e3f44d29d0a1747ea640281);
+        
+    
+            var icon_d4c0d3e26f514de68ba40abf8b14878e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_99aeef04660742c1b42ad02541ef7139.setIcon(icon_d4c0d3e26f514de68ba40abf8b14878e);
+        
+    
+        var popup_9be87a757d3a4f968ba73fd813f404fa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_447129524a1c4a70abd33bf0e9a318cc = $(`<div id="html_447129524a1c4a70abd33bf0e9a318cc" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>共享電動滑板車站點圖</title> <h4 style="margin-bottom:10px; text-align:center">交大-科學三館站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">交大-科學三館站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">LM__07</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">12</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.787697</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">120.9957894</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_9be87a757d3a4f968ba73fd813f404fa.setContent(html_447129524a1c4a70abd33bf0e9a318cc);
+        
+
+        marker_99aeef04660742c1b42ad02541ef7139.bindPopup(popup_9be87a757d3a4f968ba73fd813f404fa)
+        ;
+
+        
+    
+    
+            marker_99aeef04660742c1b42ad02541ef7139.bindTooltip(
+                `<div>
+                     交大-科學三館站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_732ecfe43d2f419ca3e65b9b92ee040e = L.marker(
+                [24.7896295, 120.9949284],
+                {}
+            ).addTo(map_92524f791e3f44d29d0a1747ea640281);
+        
+    
+            var icon_12cfc11baeea454c91fa404f1b03c651 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_732ecfe43d2f419ca3e65b9b92ee040e.setIcon(icon_12cfc11baeea454c91fa404f1b03c651);
+        
+    
+        var popup_60ff42baffc64af18365abe1b6be2684 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d8e277a839c1434db8e383c8f72d617d = $(`<div id="html_d8e277a839c1434db8e383c8f72d617d" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>共享電動滑板車站點圖</title> <h4 style="margin-bottom:10px; text-align:center">交大-健身房站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">交大-健身房站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">LM__08</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">16</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.7896295</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">120.9949284</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_60ff42baffc64af18365abe1b6be2684.setContent(html_d8e277a839c1434db8e383c8f72d617d);
+        
+
+        marker_732ecfe43d2f419ca3e65b9b92ee040e.bindPopup(popup_60ff42baffc64af18365abe1b6be2684)
+        ;
+
+        
+    
+    
+            marker_732ecfe43d2f419ca3e65b9b92ee040e.bindTooltip(
+                `<div>
+                     交大-健身房站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fe2eaf75ed264c54a8c3ca09f2d5cc34 = L.marker(
+                [24.7895612, 120.9973782],
+                {}
+            ).addTo(map_92524f791e3f44d29d0a1747ea640281);
+        
+    
+            var icon_f0cefe99125e4dea9162560659842b69 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fe2eaf75ed264c54a8c3ca09f2d5cc34.setIcon(icon_f0cefe99125e4dea9162560659842b69);
+        
+    
+        var popup_e7dac4d70e3b48d290e550e7ead76cf7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_590aeec4eade40e78b828bd8d878a3ff = $(`<div id="html_590aeec4eade40e78b828bd8d878a3ff" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>共享電動滑板車站點圖</title> <h4 style="margin-bottom:10px; text-align:center">交大-二餐前門站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">交大-二餐前門站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">LM__09</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">8</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.7895612</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">120.9973782</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_e7dac4d70e3b48d290e550e7ead76cf7.setContent(html_590aeec4eade40e78b828bd8d878a3ff);
+        
+
+        marker_fe2eaf75ed264c54a8c3ca09f2d5cc34.bindPopup(popup_e7dac4d70e3b48d290e550e7ead76cf7)
+        ;
+
+        
+    
+    
+            marker_fe2eaf75ed264c54a8c3ca09f2d5cc34.bindTooltip(
+                `<div>
+                     交大-二餐前門站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_540a300e128d46ff94ae2fe57d593ba3 = L.marker(
+                [24.79668, 120.9957623],
+                {}
+            ).addTo(map_92524f791e3f44d29d0a1747ea640281);
+        
+    
+            var icon_a9bf02a95fb64dc1bd193caf138976d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_540a300e128d46ff94ae2fe57d593ba3.setIcon(icon_a9bf02a95fb64dc1bd193caf138976d5);
+        
+    
+        var popup_d3e08b26fe4d4c9ba3de357b268520e1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3d60bce5173e45c1a8f80cdaa621179f = $(`<div id="html_3d60bce5173e45c1a8f80cdaa621179f" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>共享電動滑板車站點圖</title> <h4 style="margin-bottom:10px; text-align:center">清大-化學館站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">清大-化學館站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">TH_01</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">8</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.79668</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">120.9957623</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_d3e08b26fe4d4c9ba3de357b268520e1.setContent(html_3d60bce5173e45c1a8f80cdaa621179f);
+        
+
+        marker_540a300e128d46ff94ae2fe57d593ba3.bindPopup(popup_d3e08b26fe4d4c9ba3de357b268520e1)
+        ;
+
+        
+    
+    
+            marker_540a300e128d46ff94ae2fe57d593ba3.bindTooltip(
+                `<div>
+                     清大-化學館站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_92feee62122e4fec87b8d947d9d9732a = L.marker(
+                [24.7954248, 120.9933298],
+                {}
+            ).addTo(map_92524f791e3f44d29d0a1747ea640281);
+        
+    
+            var icon_327ee28f693c4eae8ae33af64c35d82e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_92feee62122e4fec87b8d947d9d9732a.setIcon(icon_327ee28f693c4eae8ae33af64c35d82e);
+        
+    
+        var popup_fe0c33d8cf1d45a88b3a34db08ed526f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bbb9df4a0fb645efa6394eed3e5e638d = $(`<div id="html_bbb9df4a0fb645efa6394eed3e5e638d" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>共享電動滑板車站點圖</title> <h4 style="margin-bottom:10px; text-align:center">清大-綜合三館站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">清大-綜合三館站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">TH_02</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">12</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.7954248</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">120.9933298</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_fe0c33d8cf1d45a88b3a34db08ed526f.setContent(html_bbb9df4a0fb645efa6394eed3e5e638d);
+        
+
+        marker_92feee62122e4fec87b8d947d9d9732a.bindPopup(popup_fe0c33d8cf1d45a88b3a34db08ed526f)
+        ;
+
+        
+    
+    
+            marker_92feee62122e4fec87b8d947d9d9732a.bindTooltip(
+                `<div>
+                     清大-綜合三館站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_06ebbc6d8906449fbf6180443ec8bfa8 = L.marker(
+                [24.797997, 120.9907221],
+                {}
+            ).addTo(map_92524f791e3f44d29d0a1747ea640281);
+        
+    
+            var icon_88f4e76002ed4088ad6276229205cbc7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_06ebbc6d8906449fbf6180443ec8bfa8.setIcon(icon_88f4e76002ed4088ad6276229205cbc7);
+        
+    
+        var popup_e0f68e63e819491d977b4cd66788411b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_239436e318ce4c7fbaf6b8d32131121a = $(`<div id="html_239436e318ce4c7fbaf6b8d32131121a" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>共享電動滑板車站點圖</title> <h4 style="margin-bottom:10px; text-align:center">清大-清華會館站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">清大-清華會館站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">TH_03</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">4</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.797997</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">120.9907221</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_e0f68e63e819491d977b4cd66788411b.setContent(html_239436e318ce4c7fbaf6b8d32131121a);
+        
+
+        marker_06ebbc6d8906449fbf6180443ec8bfa8.bindPopup(popup_e0f68e63e819491d977b4cd66788411b)
+        ;
+
+        
+    
+    
+            marker_06ebbc6d8906449fbf6180443ec8bfa8.bindTooltip(
+                `<div>
+                     清大-清華會館站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a04e29fde2ea4422a19e41b017b61aa4 = L.marker(
+                [24.7918317, 120.9957063],
+                {}
+            ).addTo(map_92524f791e3f44d29d0a1747ea640281);
+        
+    
+            var icon_a8919331f4f349dbaed1f135438c147d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_a04e29fde2ea4422a19e41b017b61aa4.setIcon(icon_a8919331f4f349dbaed1f135438c147d);
+        
+    
+        var popup_de3d97fb83614f11b308636cdde4f20c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b6b2647faddb46928abef811e0d0204d = $(`<div id="html_b6b2647faddb46928abef811e0d0204d" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>共享電動滑板車站點圖</title> <h4 style="margin-bottom:10px; text-align:center">清大-仁齋站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">清大-仁齋站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">TH_04</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">8</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.7918317</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">120.9957063</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_de3d97fb83614f11b308636cdde4f20c.setContent(html_b6b2647faddb46928abef811e0d0204d);
+        
+
+        marker_a04e29fde2ea4422a19e41b017b61aa4.bindPopup(popup_de3d97fb83614f11b308636cdde4f20c)
+        ;
+
+        
+    
+    
+            marker_a04e29fde2ea4422a19e41b017b61aa4.bindTooltip(
+                `<div>
+                     清大-仁齋站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0987963b5d404f6c81ff135c08fab4b0 = L.marker(
+                [24.7918969, 120.9921752],
+                {}
+            ).addTo(map_92524f791e3f44d29d0a1747ea640281);
+        
+    
+            var icon_4c33bd99752b4d2f9239ec3b84673859 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_0987963b5d404f6c81ff135c08fab4b0.setIcon(icon_4c33bd99752b4d2f9239ec3b84673859);
+        
+    
+        var popup_0d1b9a38136346e192c41c065223657e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_df9a30e18eb44bd4b9b524fa1790a728 = $(`<div id="html_df9a30e18eb44bd4b9b524fa1790a728" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>共享電動滑板車站點圖</title> <h4 style="margin-bottom:10px; text-align:center">清大-駐警隊站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">清大-駐警隊站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">TH_05</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">8</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.7918969</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">120.9921752</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_0d1b9a38136346e192c41c065223657e.setContent(html_df9a30e18eb44bd4b9b524fa1790a728);
+        
+
+        marker_0987963b5d404f6c81ff135c08fab4b0.bindPopup(popup_0d1b9a38136346e192c41c065223657e)
+        ;
+
+        
+    
+    
+            marker_0987963b5d404f6c81ff135c08fab4b0.bindTooltip(
+                `<div>
+                     清大-駐警隊站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2d3a856da97d4d56a5e486c48744ead4 = L.marker(
+                [24.79229, 120.991623],
+                {}
+            ).addTo(map_92524f791e3f44d29d0a1747ea640281);
+        
+    
+            var icon_2fb651483ee34b69ab5f41f3edd27d77 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_2d3a856da97d4d56a5e486c48744ead4.setIcon(icon_2fb651483ee34b69ab5f41f3edd27d77);
+        
+    
+        var popup_c82940000cbb452f82c0d817b617aed1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8ddc8afb2a594be0bee3ef77e6101599 = $(`<div id="html_8ddc8afb2a594be0bee3ef77e6101599" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>共享電動滑板車站點圖</title> <h4 style="margin-bottom:10px; text-align:center">清大-女宿站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">清大-女宿站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">TH_06</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">4</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.79229</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">120.991623</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_c82940000cbb452f82c0d817b617aed1.setContent(html_8ddc8afb2a594be0bee3ef77e6101599);
+        
+
+        marker_2d3a856da97d4d56a5e486c48744ead4.bindPopup(popup_c82940000cbb452f82c0d817b617aed1)
+        ;
+
+        
+    
+    
+            marker_2d3a856da97d4d56a5e486c48744ead4.bindTooltip(
+                `<div>
+                     清大-女宿站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9e841041acbc4260903ddcc8f9b9dd30 = L.marker(
+                [24.9659344, 121.1955573],
+                {}
+            ).addTo(map_92524f791e3f44d29d0a1747ea640281);
+        
+    
+            var icon_348ce372faa9426aa3b03093ee399906 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_9e841041acbc4260903ddcc8f9b9dd30.setIcon(icon_348ce372faa9426aa3b03093ee399906);
+        
+    
+        var popup_2c70a465934b45d295073ad177a57d6a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a99c3828065b43a8a489d46bcdd27e25 = $(`<div id="html_a99c3828065b43a8a489d46bcdd27e25" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>共享電動滑板車站點圖</title> <h4 style="margin-bottom:10px; text-align:center">中央-松果餐廳站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">中央-松果餐廳站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">CY_01</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">12</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.9659344</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">121.1955573</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_2c70a465934b45d295073ad177a57d6a.setContent(html_a99c3828065b43a8a489d46bcdd27e25);
+        
+
+        marker_9e841041acbc4260903ddcc8f9b9dd30.bindPopup(popup_2c70a465934b45d295073ad177a57d6a)
+        ;
+
+        
+    
+    
+            marker_9e841041acbc4260903ddcc8f9b9dd30.bindTooltip(
+                `<div>
+                     中央-松果餐廳站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_061cf8d439f5486c963b6d99a2f23400 = L.marker(
+                [24.9659234, 121.1937157],
+                {}
+            ).addTo(map_92524f791e3f44d29d0a1747ea640281);
+        
+    
+            var icon_c4b521b577de42a09152cd23765dbc24 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_061cf8d439f5486c963b6d99a2f23400.setIcon(icon_c4b521b577de42a09152cd23765dbc24);
+        
+    
+        var popup_64ee68054f8c48d7be55bfb660cb273c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_de24f27ceab74e61b7838ce2d21631f5 = $(`<div id="html_de24f27ceab74e61b7838ce2d21631f5" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>共享電動滑板車站點圖</title> <h4 style="margin-bottom:10px; text-align:center">中央-宵夜街口站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">中央-宵夜街口站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">CY_02</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">16</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.9659234</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">121.1937157</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_64ee68054f8c48d7be55bfb660cb273c.setContent(html_de24f27ceab74e61b7838ce2d21631f5);
+        
+
+        marker_061cf8d439f5486c963b6d99a2f23400.bindPopup(popup_64ee68054f8c48d7be55bfb660cb273c)
+        ;
+
+        
+    
+    
+            marker_061cf8d439f5486c963b6d99a2f23400.bindTooltip(
+                `<div>
+                     中央-宵夜街口站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2645c86ceb5c49f49c684d131d89b6c2 = L.marker(
+                [24.9666608, 121.1925717],
+                {}
+            ).addTo(map_92524f791e3f44d29d0a1747ea640281);
+        
+    
+            var icon_69cc88fbdcfb49ca997b89620d1c6fb0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_2645c86ceb5c49f49c684d131d89b6c2.setIcon(icon_69cc88fbdcfb49ca997b89620d1c6fb0);
+        
+    
+        var popup_c412d91cb2ef445caff4674f48d7130f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5c1f93629d7f4cfa9f2aa6293df99b33 = $(`<div id="html_5c1f93629d7f4cfa9f2aa6293df99b33" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>共享電動滑板車站點圖</title> <h4 style="margin-bottom:10px; text-align:center">中央-女宿站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">中央-女宿站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">CY_03</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">16</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.9666608</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">121.1925717</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_c412d91cb2ef445caff4674f48d7130f.setContent(html_5c1f93629d7f4cfa9f2aa6293df99b33);
+        
+
+        marker_2645c86ceb5c49f49c684d131d89b6c2.bindPopup(popup_c412d91cb2ef445caff4674f48d7130f)
+        ;
+
+        
+    
+    
+            marker_2645c86ceb5c49f49c684d131d89b6c2.bindTooltip(
+                `<div>
+                     中央-女宿站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_90cc50c2fa794e5eb1e551c1702442c0 = L.marker(
+                [24.9668518, 121.1911102],
+                {}
+            ).addTo(map_92524f791e3f44d29d0a1747ea640281);
+        
+    
+            var icon_be70c047b6b344199af3d2f4bed826c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_90cc50c2fa794e5eb1e551c1702442c0.setIcon(icon_be70c047b6b344199af3d2f4bed826c9);
+        
+    
+        var popup_828b3ccd3af443538b9e35260a8ec788 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_da70dd2330ce49c3843633fabbad6f2b = $(`<div id="html_da70dd2330ce49c3843633fabbad6f2b" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>共享電動滑板車站點圖</title> <h4 style="margin-bottom:10px; text-align:center">中央-松苑餐廳站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">中央-松苑餐廳站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">CY_04</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">16</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.9668518</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">121.1911102</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_828b3ccd3af443538b9e35260a8ec788.setContent(html_da70dd2330ce49c3843633fabbad6f2b);
+        
+
+        marker_90cc50c2fa794e5eb1e551c1702442c0.bindPopup(popup_828b3ccd3af443538b9e35260a8ec788)
+        ;
+
+        
+    
+    
+            marker_90cc50c2fa794e5eb1e551c1702442c0.bindTooltip(
+                `<div>
+                     中央-松苑餐廳站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_10d05cc8df344c15a15357f2f9f71407 = L.marker(
+                [24.9672827, 121.1879489],
+                {}
+            ).addTo(map_92524f791e3f44d29d0a1747ea640281);
+        
+    
+            var icon_20e347c3d3234f1cb14868cf48f0d9fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_10d05cc8df344c15a15357f2f9f71407.setIcon(icon_20e347c3d3234f1cb14868cf48f0d9fe);
+        
+    
+        var popup_4cddb80a843c49c3b2af078745901a7c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_204a57c31ba845f3944774bf21e578fb = $(`<div id="html_204a57c31ba845f3944774bf21e578fb" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>共享電動滑板車站點圖</title> <h4 style="margin-bottom:10px; text-align:center">中央-工程五館站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">中央-工程五館站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">CY_05</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">16</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.9672827</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">121.1879489</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_4cddb80a843c49c3b2af078745901a7c.setContent(html_204a57c31ba845f3944774bf21e578fb);
+        
+
+        marker_10d05cc8df344c15a15357f2f9f71407.bindPopup(popup_4cddb80a843c49c3b2af078745901a7c)
+        ;
+
+        
+    
+    
+            marker_10d05cc8df344c15a15357f2f9f71407.bindTooltip(
+                `<div>
+                     中央-工程五館站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c7e58c605bac4c1d9dafc7ea16b965e7 = L.marker(
+                [24.9687155, 121.1911223],
+                {}
+            ).addTo(map_92524f791e3f44d29d0a1747ea640281);
+        
+    
+            var icon_54393bd6f26548e0a34186985799160c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_c7e58c605bac4c1d9dafc7ea16b965e7.setIcon(icon_54393bd6f26548e0a34186985799160c);
+        
+    
+        var popup_6121f68aa5324cf3959245c45ba37307 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_740e1fa37338428f8194c6659b9adee6 = $(`<div id="html_740e1fa37338428f8194c6659b9adee6" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>共享電動滑板車站點圖</title> <h4 style="margin-bottom:10px; text-align:center">中央-依仁堂站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">中央-依仁堂站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">CY_06</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">12</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.9687155</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">121.1911223</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_6121f68aa5324cf3959245c45ba37307.setContent(html_740e1fa37338428f8194c6659b9adee6);
+        
+
+        marker_c7e58c605bac4c1d9dafc7ea16b965e7.bindPopup(popup_6121f68aa5324cf3959245c45ba37307)
+        ;
+
+        
+    
+    
+            marker_c7e58c605bac4c1d9dafc7ea16b965e7.bindTooltip(
+                `<div>
+                     中央-依仁堂站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8e06ad411d574eddb3cebe1b6d1fca75 = L.marker(
+                [24.9699358, 121.1905419],
+                {}
+            ).addTo(map_92524f791e3f44d29d0a1747ea640281);
+        
+    
+            var icon_c66cdb85d75645388315924e6a3a9217 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_8e06ad411d574eddb3cebe1b6d1fca75.setIcon(icon_c66cdb85d75645388315924e6a3a9217);
+        
+    
+        var popup_55ba74345e66453cb733cf4d62976262 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dbae270c963449f4a9c2c45df73d2503 = $(`<div id="html_dbae270c963449f4a9c2c45df73d2503" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>共享電動滑板車站點圖</title> <h4 style="margin-bottom:10px; text-align:center">中央-中大湖站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">中央-中大湖站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">CY_07</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">12</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.9699358</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">121.1905419</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_55ba74345e66453cb733cf4d62976262.setContent(html_dbae270c963449f4a9c2c45df73d2503);
+        
+
+        marker_8e06ad411d574eddb3cebe1b6d1fca75.bindPopup(popup_55ba74345e66453cb733cf4d62976262)
+        ;
+
+        
+    
+    
+            marker_8e06ad411d574eddb3cebe1b6d1fca75.bindTooltip(
+                `<div>
+                     中央-中大湖站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_66d9da14fc614dc7b33131fc3947a309 = L.marker(
+                [24.970082, 121.1931906],
+                {}
+            ).addTo(map_92524f791e3f44d29d0a1747ea640281);
+        
+    
+            var icon_aaa6cceeee034bc8b9d7dfdedde1cf6c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_66d9da14fc614dc7b33131fc3947a309.setIcon(icon_aaa6cceeee034bc8b9d7dfdedde1cf6c);
+        
+    
+        var popup_9277a1c6e3df4455ab12607537fbdea6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_98bb7b31ef78435f9d045a4aaae0d328 = $(`<div id="html_98bb7b31ef78435f9d045a4aaae0d328" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>共享電動滑板車站點圖</title> <h4 style="margin-bottom:10px; text-align:center">中央-綜教館站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">中央-綜教館站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">CY_08</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">16</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.970082</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">121.1931906</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_9277a1c6e3df4455ab12607537fbdea6.setContent(html_98bb7b31ef78435f9d045a4aaae0d328);
+        
+
+        marker_66d9da14fc614dc7b33131fc3947a309.bindPopup(popup_9277a1c6e3df4455ab12607537fbdea6)
+        ;
+
+        
+    
+    
+            marker_66d9da14fc614dc7b33131fc3947a309.bindTooltip(
+                `<div>
+                     中央-綜教館站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9bb345246f1141bb9d7d2c81651f9f05 = L.marker(
+                [24.9703628, 121.1952827],
+                {}
+            ).addTo(map_92524f791e3f44d29d0a1747ea640281);
+        
+    
+            var icon_a6e347642f034237880ba5cb8c82421c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_9bb345246f1141bb9d7d2c81651f9f05.setIcon(icon_a6e347642f034237880ba5cb8c82421c);
+        
+    
+        var popup_fe223479ed804e8e8c33daab9e0a5c2c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_65c758bfbdc549a8afdeaaf6feaa5cd5 = $(`<div id="html_65c758bfbdc549a8afdeaaf6feaa5cd5" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>共享電動滑板車站點圖</title> <h4 style="margin-bottom:10px; text-align:center">中央-男九舍站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">中央-男九舍站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">CY_09</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">16</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.9703628</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">121.1952827</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_fe223479ed804e8e8c33daab9e0a5c2c.setContent(html_65c758bfbdc549a8afdeaaf6feaa5cd5);
+        
+
+        marker_9bb345246f1141bb9d7d2c81651f9f05.bindPopup(popup_fe223479ed804e8e8c33daab9e0a5c2c)
+        ;
+
+        
+    
+    
+            marker_9bb345246f1141bb9d7d2c81651f9f05.bindTooltip(
+                `<div>
+                     中央-男九舍站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8ffa320f25e549769161b9fa5d90603c = L.marker(
+                [24.9682094, 121.1947],
+                {}
+            ).addTo(map_92524f791e3f44d29d0a1747ea640281);
+        
+    
+            var icon_a58fc0aa19844b7aa059efc2f15c6350 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_8ffa320f25e549769161b9fa5d90603c.setIcon(icon_a58fc0aa19844b7aa059efc2f15c6350);
+        
+    
+        var popup_c3fccac3f29c416cb90277e54a9e92e6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ae6096fd219b46d5b87b539cab845b02 = $(`<div id="html_ae6096fd219b46d5b87b539cab845b02" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>共享電動滑板車站點圖</title> <h4 style="margin-bottom:10px; text-align:center">中央-圖書館站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">中央-圖書館站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">CY_10</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">16</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.9682094</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">121.1947</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_c3fccac3f29c416cb90277e54a9e92e6.setContent(html_ae6096fd219b46d5b87b539cab845b02);
+        
+
+        marker_8ffa320f25e549769161b9fa5d90603c.bindPopup(popup_c3fccac3f29c416cb90277e54a9e92e6)
+        ;
+
+        
+    
+    
+            marker_8ffa320f25e549769161b9fa5d90603c.bindTooltip(
+                `<div>
+                     中央-圖書館站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var layer_control_0a12a9bc02194506bac735c569efd7eb = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_0e1fb1cdb41346dfa410f8e495a85060,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_0a12a9bc02194506bac735c569efd7eb.base_layers,
+                layer_control_0a12a9bc02194506bac735c569efd7eb.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_92524f791e3f44d29d0a1747ea640281);
+        
+</script>
